@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title><%- title %></title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/style/all.css" />
+  </head>
+
+  <body ontouchstart>
+    <div class="wrap">
+      <!-- Navbar -->
+      <section class="navbar">
+        <a href="#" class="ham_icon">
+          <span id="icon" class="icon-menu"></span>
+        </a>
+        <h1
+          class="text-hide"
+          style="background: url('./assets/images/index/logo.png') no-repeat; width: 80px; height: 48.57px;"
+        >
+          六角眼鏡行
+        </h1>
+        <ul class="dropdown">
+          <li><a href="#">系列鏡框</a></li>
+          <li><a href="#">門市據點</a></li>
+          <li><a href="#">部落格</a></li>
+          <li><a href="#">常見問題</a></li>
+        </ul>
+      </section>
+
+      <%- contents %>
+
+      <!-- Footer -->
+      <section class="footer">
+        <div class="container">
+          <div class="d-flex justify-content-between mb-4">
+            <ul class="menu">
+              <li><a href="#">首頁</a></li>
+              <li><a href="#">系列鏡框</a></li>
+              <li><a href="#">門市據點</a></li>
+              <li><a href="#">部落格</a></li>
+              <li><a href="#">常見問題</a></li>
+            </ul>
+            <ul class="social">
+              <li>
+                <a href="#">
+                  <img
+                    src="./assets/images/index/footer/ic_social_fb.svg"
+                    alt=""
+                  />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img
+                    src="./assets/images/index/footer/ic_social_ig.svg"
+                    alt=""
+                  />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img
+                    src="./assets/images/index/footer/ic_social_line.svg"
+                    alt=""
+                  />
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="d-flex mb-2">
+            <img src="./assets/images/index/footer/ic_phone_48px.svg" alt="" />
+            <h4 class="cellphone">
+              0800-000-000
+            </h4>
+          </div>
+          <div class="d-flex mb-3">
+            <img
+              src="./assets/images/index/footer/ic_mail_outline_24px.svg"
+              alt=""
+            />
+            <h4 class="email">
+              glasses@business.com
+            </h4>
+          </div>
+          <div class="h-line mb-3"></div>
+          <div class="d-flex justify-content-between">
+            <div class="copyright d-flex">
+              <img src="./assets/images/index/logo.png" alt="" />
+              <h5>Copyright © 2020 Glasses.All rights reserved.</h5>
+            </div>
+            <ul class="policy">
+              <li><a href="#">隱私權政策</a></li>
+              <li><a href="#">服務條款</a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src="./assets/script/all.js"></script>
+  </body>
+</html>

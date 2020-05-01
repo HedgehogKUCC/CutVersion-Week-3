@@ -1,0 +1,227 @@
+// Navbar
+.navbar {
+  display: flex;
+  background: $primary;
+  padding: 30px 88px;
+  justify-content: space-between;
+  align-items: center;
+
+  @media screen and (max-width: 768px) {
+    padding: 30px 48px;
+  }
+
+  @media screen and (max-width: 375px) {
+    position: relative;
+  }
+
+  .ham_icon {
+    position: absolute;
+    left: 16px;
+    font-size: 2.9rem;
+    color: $clear;
+
+    @media screen and (min-width: 376px) {
+      display: none;
+    }
+  }
+
+  h1 {
+    @media screen and (max-width: 375px) {
+      margin: 0 auto;
+    }
+  }
+
+  .dropdown {
+    display: flex;
+
+    @media screen and (max-width: 375px) {
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 100%;
+      width: 100%;
+      max-height: 0px;
+      transition: all 0.8s;
+      overflow: hidden;
+      z-index: 120;
+    }
+  }
+
+  .dropdown.active {
+    max-height: 244px;
+  }
+
+  li {
+    margin-right: 64px;
+
+    @media screen and (max-width: 768px) {
+      margin-right: 40px;
+    }
+
+    @media screen and (max-width: 375px) {
+      margin-right: 0;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    a {
+      font-size: 2rem;
+      line-height: 2.8rem;
+      color: $clear;
+      display: block;
+
+      @media screen and (max-width: 375px) {
+        background: $primary;
+        border-top: 1px solid $clear;
+        padding: 16px 0;
+        text-align: center;
+      }
+
+      &:hover {
+        @media screen and (max-width: 375px) {
+          background: #8f0400;
+        }
+      }
+    }
+  }
+}
+
+// Footer
+.footer {
+  background: $primary;
+  color: $clear;
+  padding: 48px 0 27px;
+
+  @media screen and (max-width: 768px) {
+    padding: 40px 48px;
+  }
+
+  .menu, .social, .policy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .menu {
+
+    li {
+      margin-left: 48px;
+
+      @media screen and (max-width: 768px) {
+        margin-left: 40px;
+      }
+    }
+
+    li:first-child {
+      margin-left: 0;
+    }
+
+    a {
+      font-size: 1.6rem;
+      line-height: 2.2rem;
+      color: $clear;
+      display: block;
+    }
+  }
+
+  .social {
+
+    li {
+      margin-left: 32px;
+
+      @media screen and (max-width: 768px) {
+        margin-left: 24px;
+      }
+    }
+
+    li:first-child { 
+      margin-left: 0;
+    }
+
+    a {
+      display: block;
+    }
+
+    img {
+      @media screen and (max-width: 768px) {
+        width: 24px;
+      }
+    }
+  }
+
+  h4 {
+    font-size: 3.6rem;
+    line-height: 4.8rem;
+    font-weight: 300;
+
+    @media screen and (max-width: 768px) {
+      font-size: 20px;
+      line-height: 26px;
+    }
+  }
+
+  h5 {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+  }
+
+  .cellphone {
+    margin-left: 23px;
+  }
+
+  .email {
+    margin-left: 12px;
+  }
+
+  .copyright {
+    justify-content: center;
+    align-items: center;
+
+    img {
+      @media screen and (max-width: 768px) {
+        display: none;
+      }
+    }
+
+    h5 {
+      margin-left: 38px;
+      font-weight: 300;
+
+      @media screen and (max-width: 768px) {
+        margin-left: 0;
+      }
+    }
+  }
+
+  img[src$="ic_phone_48px.svg"] {
+    @media screen and (max-width: 768px) {
+      width: 23px;
+    }
+  }
+
+  img[src$="ic_mail_outline_24px.svg"] {
+    @media screen and (max-width: 768px) {
+      width: 32px;
+    }
+  }
+
+  .policy {
+
+    li {
+      margin-left: 62px;
+    }
+
+    li:first-child {
+      margin-left: 0;
+    }
+    
+    a {
+      font-size: 1.4rem;
+      line-height: 2rem;
+      display: block;
+      color: $clear;
+    }
+  }
+}

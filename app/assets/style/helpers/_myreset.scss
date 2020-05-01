@@ -1,0 +1,32 @@
+html {
+  font-size: 10px;
+  line-height: 10px;
+  font-family: 'Roboto', sans-serif;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  // outline: 1px solid red;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, p {
+  margin: 0;
+}
+
+.wrap {
+  margin: 1920px;
+  margin: 0 auto;
+}

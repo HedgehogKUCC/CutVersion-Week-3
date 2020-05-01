@@ -1,0 +1,5 @@
+node_modules
+dist
+dist/assets/style/components
+dist/assets/style/helpers
+dist/assets/style/page
