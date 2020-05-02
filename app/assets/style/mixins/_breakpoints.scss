@@ -1,0 +1,20 @@
+// 768 ~ 992
+@mixin pad {
+  @media screen and (max-width: 992px) {
+    @content
+  }
+};
+
+// mobile
+@mixin mobile {
+  @media screen and (max-width: 767px) {
+    @content
+  }
+};
+
+// mobile-320
+@mixin mobile-s {
+  @media screen and (max-width: 320px) {
+    @content
+  }
+}

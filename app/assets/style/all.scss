@@ -3,7 +3,12 @@
 @import './helpers/myreset';
 @import './helpers/variable';
 @import './helpers/utilities';
+@import './mixins/breakpoints';
+@import './mixins/hide-text';
 @import './layout';
+
+// page
+@import './page/index';
 
 // icon
 @font-face {
@@ -39,6 +44,3 @@
 .icon-cross:before {
   content: "\ea0f";
 }
-
-// page
-@import './page/index';
