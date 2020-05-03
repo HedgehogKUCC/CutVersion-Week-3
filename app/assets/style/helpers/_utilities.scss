@@ -22,12 +22,16 @@
   max-width: 1200px;
   margin: 0 auto;
 
+  @include pc() {
+    width: 90% !important;
+  }
+
   @include pad() {
-    max-width: 672px;
+    width: 56% !important;
   }
 
   @include mobile() {
-    max-width: 352px;
+    width: 29.4% !important;
   }
 }
 
@@ -38,14 +42,6 @@
 
 .d-flex {
   display: flex;
-}
-
-.d-flex-lg-reverse {
-  display: flex;
-
-  @media screen and (min-width: 993px) {
-    flex-direction: row-reverse;
-  }
 }
 
 .justify-content-between {

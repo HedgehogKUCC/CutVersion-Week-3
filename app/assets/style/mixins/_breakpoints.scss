@@ -1,3 +1,10 @@
+// 1200
+@mixin pc {
+  @media screen and (max-width: 1200px) {
+    @content
+  }
+};
+
 // 768 ~ 992
 @mixin pad {
   @media screen and (max-width: 992px) {
@@ -17,4 +24,4 @@
   @media screen and (max-width: 320px) {
     @content
   }
-}
+};
