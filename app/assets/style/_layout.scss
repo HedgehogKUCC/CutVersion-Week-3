@@ -102,6 +102,10 @@
     padding: 40px 48px;
   }
 
+  .container {
+    padding: 0 50px;
+  }
+
   .menu, .social, .policy {
     display: flex;
     justify-content: center;
@@ -168,7 +172,13 @@
 
   h5 {
     font-size: 1.6rem;
-    line-height: 2.4rem;
+    line-height: 2.1rem;
+    margin-left: 38px;
+    font-weight: 300;
+
+    @include pad() {
+      margin-left: 0;
+    }
   }
 
   .cellphone {
@@ -188,18 +198,11 @@
         display: none;
       }
     }
-
-    h5 {
-      margin-left: 38px;
-      font-weight: 300;
-
-      @include pad() {
-        margin-left: 0;
-      }
-    }
   }
 
   img[src$="ic_phone_48px.svg"] {
+    height: 36px;
+
     @include pad() {
       width: 23px;
     }
