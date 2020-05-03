@@ -21,6 +21,14 @@
 .container {
   max-width: 1200px;
   margin: 0 auto;
+
+  @include pad() {
+    max-width: 672px;
+  }
+
+  @include mobile() {
+    max-width: 352px;
+  }
 }
 
 .container-md {
