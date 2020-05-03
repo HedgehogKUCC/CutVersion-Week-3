@@ -102,6 +102,10 @@
     padding: 40px 48px;
   }
 
+  @include mobile() {
+    padding: 24px 14px;
+  }
+
   .container {
     padding: 0 50px;
 
@@ -172,6 +176,11 @@
       font-size: 2rem;
       line-height: 2.6rem;
     }
+
+    @include mobile() {
+      font-size: 1.6rem;
+      line-height: 2.1rem;
+    }
   }
 
   h5 {
@@ -183,6 +192,11 @@
     @include pad() {
       margin-left: 0;
     }
+
+    @include mobile() {
+      font-size: 1.4rem;
+      line-height: 1.9rem;
+    }
   }
 
   .cellphone {
@@ -190,6 +204,18 @@
 
     @include pad() {
       margin-left: 12px;
+    }
+
+    @include mobile() {
+      margin-right: auto;
+    }
+
+    + .social {
+      display: none;
+
+      @include mobile() {
+        display: flex;
+      }
     }
   }
 
@@ -219,15 +245,27 @@
       width: 23px;
       height: 23px;
     }
+
+    @include mobile() {
+      width: 13px;
+      height: 13px;
+    }
   }
 
   img[src$="ic_mail_outline_24px.svg"] {
     @include pad() {
       width: 32px;
     }
+
+    @include mobile() {
+      width: 20px;
+    }
   }
 
   .policy {
+    @include mobile() {
+      display: none;
+    }
 
     li {
       margin-left: 62px;
@@ -246,6 +284,34 @@
       line-height: 2rem;
       display: block;
       color: $clear;
+    }
+  }
+
+  &_bottom {
+    display: none;
+
+    @include mobile() {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .policy {
+      display: block;
+
+      li {
+        margin-left: 0;
+        margin-bottom: 8px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    img {
+      width: 46px;
+      height: 28px;
     }
   }
 }
