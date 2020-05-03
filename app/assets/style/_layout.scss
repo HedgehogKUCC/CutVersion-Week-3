@@ -104,6 +104,10 @@
 
   .container {
     padding: 0 50px;
+
+    @include pad() {
+      padding: 0;
+    }
   }
 
   .menu, .social, .policy {
@@ -165,8 +169,8 @@
     font-weight: 300;
 
     @include pad() {
-      font-size: 20px;
-      line-height: 26px;
+      font-size: 2rem;
+      line-height: 2.6rem;
     }
   }
 
@@ -183,10 +187,18 @@
 
   .cellphone {
     margin-left: 23px;
+
+    @include pad() {
+      margin-left: 12px;
+    }
   }
 
   .email {
     margin-left: 12px;
+
+    @include pad() {
+      margin-left: 8px;
+    }
   }
 
   .copyright {
@@ -205,6 +217,7 @@
 
     @include pad() {
       width: 23px;
+      height: 23px;
     }
   }
 
@@ -218,6 +231,10 @@
 
     li {
       margin-left: 62px;
+
+      @include pad() {
+        margin-left: 24px;
+      }
     }
 
     li:first-child {
