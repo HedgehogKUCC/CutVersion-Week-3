@@ -5,6 +5,10 @@
   @include bg-cover;
   height: 840px;
 
+  @include mobile() {
+    height: 394px;
+  }
+
   &_slogan {
     height: 100%;
     display: flex;
