@@ -139,7 +139,7 @@
   padding: 6.4rem 0 8rem;
 
   @include pad() {
-    padding: 4rem 4.8rem;
+    padding: 4rem 0;
   }
 
   h3 {
@@ -162,6 +162,10 @@
       align-items: center;
       margin-bottom: 3.2rem;
 
+      @include pad() {
+        margin-bottom: 0.8rem;
+      }
+
       &:last-child {
         margin-bottom: 0;
       }
@@ -169,8 +173,57 @@
       &:nth-child(even) {
         flex-direction: row-reverse;
 
+        @include pad() {
+          flex-direction: row;
+        }
+
         .list_img {
           margin: 0 0 0 2%;
+
+          @include pad() {
+            margin: 0 5.21% 0 0;
+          }
+        }
+
+        .list_title img {
+          @include pad() {
+            width: 32px;
+            height: 32px;
+          }
+        }
+      }
+
+      &:nth-child(1) {
+        .list_img {
+          @include pad() {
+            margin: 0 9.67% 0 0;
+          }
+        }
+
+        .list_title {
+          img {
+            @include pad() {
+              width: 32px;
+              height: 25px;
+            }
+          }
+        }
+      }
+
+      &:nth-child(3) {
+        .list_img {
+          @include pad() {
+            margin: 0 6.4% 0 0;
+          }
+        }
+
+        .list_title {
+          img {
+            @include pad() {
+              width: 23px;
+              height: 32px;
+            }
+          }
         }
       }
     }
@@ -178,6 +231,11 @@
     &_img {
       width: 66%;
       margin-right: 2%;
+
+      @include pad() {
+        width: 61%;
+        margin: 0;
+      }
     }
 
     &_title {
@@ -188,6 +246,11 @@
       line-height: 5.7rem;
       text-transform: uppercase;
       color: $primary;
+
+      @include pad() {
+        font-size: 2.8rem;
+        line-height: 3.3rem;
+      }
 
       img {
         margin-right: 2.2%;
