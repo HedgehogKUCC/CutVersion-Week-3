@@ -4,12 +4,12 @@
 .navbar {
   display: flex;
   background: $primary;
-  padding: 30px 88px;
+  padding: 3rem 8.8rem;
   justify-content: space-between;
   align-items: center;
 
   @include pad() {
-    padding: 30px 48px;
+    padding: 3rem 4.8rem;
   }
 
   @include mobile() {
@@ -56,10 +56,10 @@
   }
 
   li {
-    margin-right: 64px;
+    margin-right: 6.4rem;
 
     @include pad() {
-      margin-right: 40px;
+      margin-right: 4rem;
     }
 
     @include mobile() {
@@ -79,7 +79,7 @@
       @include mobile() {
         background: $primary;
         border-top: 1px solid $clear;
-        padding: 15.5px 0;
+        padding: 1.55rem 0;
         text-align: center;
       }
 
