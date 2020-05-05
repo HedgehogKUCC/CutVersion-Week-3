@@ -142,6 +142,10 @@
     padding: 4rem 0;
   }
 
+  @include mobile() {
+    padding: 2.4rem 0;
+  }
+
   h3 {
     font-size: 4.8rem;
     line-height: 6.7rem;
@@ -154,9 +158,16 @@
       line-height: 4.5rem;
       margin-bottom: 3.2rem;
     }
+
+    @include mobile() {
+      font-size: 2.4rem;
+      line-height: 3.3rem;
+      margin-bottom: 1.6rem;
+    }
   }
 
   .list {
+    font-style: italic;
     &_wrap {
       display: flex;
       align-items: center;
@@ -164,6 +175,10 @@
 
       @include pad() {
         margin-bottom: 0.8rem;
+      }
+
+      @include mobile() {
+        position: relative;
       }
 
       &:last-child {
@@ -236,10 +251,13 @@
         width: 61%;
         margin: 0;
       }
+
+      @include mobile() {
+        width: 100%;
+      }
     }
 
     &_title {
-      width: 30%;
       display: flex;
       align-items: center;
       font-size: 4.8rem;
@@ -252,8 +270,20 @@
         line-height: 3.3rem;
       }
 
+      @include mobile() {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: $clear;
+      }
+
       img {
         margin-right: 2.2%;
+        
+        @include mobile() {
+          filter: brightness(500);
+        }
       }
     }
   }
