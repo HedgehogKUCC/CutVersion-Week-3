@@ -96,18 +96,18 @@
 .footer {
   background: $primary;
   color: $clear;
-  padding: 48px 0 27px;
+  padding: 4.8rem 0 2.7rem;
 
   @include pad() {
     padding: 4rem 0;
   }
 
   @include mobile() {
-    padding: 24px 14px;
+    padding: 2.4rem 0;
   }
 
   .container {
-    padding: 0 50px;
+    padding: 0 5rem;
 
     @include pad() {
       padding: 0;
@@ -123,10 +123,10 @@
   .menu {
 
     li {
-      margin-left: 48px;
+      margin-left: 4.8rem;
 
       @include pad() {
-        margin-left: 40px;
+        margin-left: 4rem;
       }
     }
 
@@ -145,10 +145,10 @@
   .social {
 
     li {
-      margin-left: 32px;
+      margin-left: 3.2rem;
 
       @include pad() {
-        margin-left: 24px;
+        margin-left: 2.4rem;
       }
     }
 
@@ -186,7 +186,7 @@
   h5 {
     font-size: 1.6rem;
     line-height: 2.1rem;
-    margin-left: 38px;
+    margin-left: 3.8rem;
     font-weight: 300;
 
     @include pad() {
@@ -200,10 +200,10 @@
   }
 
   .cellphone {
-    margin-left: 23px;
+    margin-left: 2.3rem;
 
     @include pad() {
-      margin-left: 12px;
+      margin-left: 1.2rem;
     }
 
     @include mobile() {
@@ -220,10 +220,10 @@
   }
 
   .email {
-    margin-left: 12px;
+    margin-left: 1.2rem;
 
     @include pad() {
-      margin-left: 8px;
+      margin-left: 0.8rem;
     }
   }
 
@@ -268,10 +268,10 @@
     }
 
     li {
-      margin-left: 62px;
+      margin-left: 6.2rem;
 
       @include pad() {
-        margin-left: 24px;
+        margin-left: 2.4rem;
       }
     }
 
@@ -301,7 +301,7 @@
 
       li {
         margin-left: 0;
-        margin-bottom: 8px;
+        margin-bottom: 0.8rem;
 
         &:last-child {
           margin-bottom: 0;
