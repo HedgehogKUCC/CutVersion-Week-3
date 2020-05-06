@@ -502,7 +502,7 @@
 
 // Contact Us
 .contact {
-  padding: 64px 0 92px;
+  padding: 6.4rem 0 9.2rem;
   background: $pure;
   font-size: 1.6rem;
   line-height: 2.2rem;
@@ -510,42 +510,54 @@
   user-select: none;
 
   @include pad() {
-    padding: 40px 135px 56px;
+    padding: 4rem 13.5rem 5.6rem;
+  }
+
+  .container {
+    padding: 0 20.4rem;
+
+    @include pc() {
+      padding: 0 11.4rem;
+    }
+
+    @include pad() {
+      padding: 0 8.7rem;
+    }
+
+    > p {
+      font-size: 2rem;
+      line-height: 3rem;
+      text-align: left;
+      margin-bottom: 2rem;
+
+      @include pad() {
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+        margin-bottom: 1.6rem;
+      }
+    }
   }
 
   h3 {
     font-size: 4.8rem;
     line-height: 6.7rem;
-    margin-bottom: 24px;
+    margin-bottom: 2.4rem;
     text-align: center;
 
     @include pad() {
       font-size: 3.2rem;
       line-height: 4.5rem;
-      margin-bottom: 16px;
-    }
-  }
-
-  .container-md > p {
-    font-size: 2rem;
-    line-height: 3rem;
-    text-align: left;
-    margin-bottom: 20px;
-
-    @include pad() {
-      font-size: 1.6rem;
-      line-height: 2.4rem;
-      margin-bottom: 16px;
+      margin-bottom: 1.6rem;
     }
   }
 
   .form_group {
-    margin: 0 auto 16px auto;
+    margin: 0 auto 1.6rem auto;
 
     label {
       display: flex;
       align-items: center;
-      margin-bottom: 4px;
+      margin-bottom: 0.4rem;
       cursor: pointer;
     }
 
@@ -564,15 +576,15 @@
     }
 
     p {
-      margin-bottom: 4px;
+      margin-bottom: 0.4rem;
       text-align: left;
       cursor: pointer;
     }
 
     .input_textarea {
-      min-height: 136px;
+      min-height: 13.6rem;
       width: 100%;
-      padding: 14px 16px;
+      padding: 1.4rem 1.6rem;
       color: $primary;
       border: 1px solid #000;
       
@@ -589,9 +601,9 @@
   .checkbox {
     display: block;
     position: relative;
-    padding-top: 2.5px;
-    padding-left: 30px;
-    margin-bottom: 42px;
+    padding-top: 0.25rem;
+    padding-left: 3rem;
+    margin-bottom: 4.2rem;
     cursor: pointer;
     text-align: left;
 
@@ -628,7 +640,7 @@
     vertical-align: middle;
     cursor: pointer;
     border: 1px solid $primary;
-    padding: 16px 58px;
+    padding: 1.714rem 5.71rem;
     outline: none;
 
     &:hover {
@@ -637,7 +649,7 @@
     }
 
     @include pad() {
-      padding: 7px 36px;
+      padding: 0.7rem 3.6rem;
     }
   }
 }
