@@ -510,7 +510,7 @@
   user-select: none;
 
   @include pad() {
-    padding: 4rem 13.5rem 5.6rem;
+    padding: 4rem 0 5.6rem;
   }
 
   .container {
@@ -552,7 +552,11 @@
   }
 
   .form_group {
-    margin: 0 auto 1.6rem auto;
+    margin: 0 auto 1.6rem;
+
+    @include pad() {
+      margin: 0 auto 1.2rem;
+    }
 
     label {
       display: flex;
@@ -582,6 +586,7 @@
     }
 
     .input_textarea {
+      display: block; // textarea is a inline-block
       min-height: 13.6rem;
       width: 100%;
       padding: 1.4rem 1.6rem;
@@ -609,6 +614,7 @@
 
     @include pad() {
       font-size: 1.4rem;
+      margin-bottom: 2.4rem;
     }
 
     /* Hide the browser's default checkbox */
