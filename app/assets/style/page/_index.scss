@@ -328,13 +328,17 @@
     display: flex;
     justify-content: space-between;
 
+    @include pc() {
+      width: 90%;
+    }
+
     @include pad() {
-      max-width: 672px;
+      width: 87.5%;
       margin: 0 auto 4rem;
     }
 
     @include mobile() {
-      max-width: 352px;
+      width: 93.6%;
       margin: 0 auto 2rem;
       padding-left: 1rem;
       padding-right: 1rem;
@@ -384,8 +388,7 @@
           width: 13.765%;
 
           @include mobile() {
-            width: 19.5%;
-            height: 103.5px;
+            width: 22.8%;
           }
         }
 
@@ -415,7 +418,7 @@
             @include mobile() {
               position: absolute;
               top: 175%;
-              left: 4%
+              left: 7%
             }
 
             .box {
@@ -456,6 +459,7 @@
 
                 @include mobile() {
                   left: 5%;
+                  width: 116.5%;
                 }
 
                 .more {
@@ -466,7 +470,7 @@
                   left: 10.5%;
                   transform: translateY(-50%);
 
-                  @media screen and (max-width: 1080px){
+                  @include pc() {
                     font-size: 4rem;
                     line-height: 5.3rem;
                     left: 23.2%;
@@ -493,13 +497,18 @@
                     display: none;
                   }
 
-                  @media screen and (max-width: 1080px){
+                  @include pc() {
                     display: block;
                     color: $clear;
                     font-size: 2.7rem;
                   }
 
+                  @media screen and (max-width: 1080px) {
+                    display: none;
+                  }
+
                   @include pad() {
+                    display: block;
                     color: $primary;
                   }
 
@@ -520,12 +529,7 @@
     justify-content: space-between;
     align-items: center;
 
-    @include pad() {
-      max-width: 672px;
-    }
-
     @include mobile() {
-      max-width: 352px;
       display: block;
     }
 
@@ -535,6 +539,8 @@
 
       @include pad() {
         width: 47.92%;
+        height: 280px;
+        overflow: hidden;
       }
 
       @include mobile() {
@@ -545,6 +551,12 @@
       &:last-child {
         @include mobile() {
           margin-bottom: 0;
+        }
+      }
+
+      &_img {
+        @include mobile() {
+          width: 100%;
         }
       }
 
