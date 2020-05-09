@@ -1,3 +1,28 @@
+// Variable
+$primary: #AA0601;
+$secondary: #650300;
+$pure: #AA06010D;
+$clear: #fff;
+
+// Container
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+
+  @include pc() {
+    width: 90% !important;
+  }
+
+  @include pad() {
+    width: 87.5% !important;
+  }
+
+  @include mobile() {
+    width: 93.87% !important;
+  }
+}
+
+// Base
 html {
   font-size: 10px;
   line-height: 10px;
@@ -12,6 +37,7 @@ html {
 img {
   max-width: 100%;
   height: auto;
+  display: block;
 }
 
 ul {

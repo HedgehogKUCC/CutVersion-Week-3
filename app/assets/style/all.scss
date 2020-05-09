@@ -1,7 +1,7 @@
 // helpers
 @import './helpers/normalize';
-@import './helpers/myreset';
-@import './helpers/variable';
+@import './mixins/mixin-all';
+@import './helpers/base';
 @import './helpers/utilities';
 @import './layout';
 
@@ -41,4 +41,7 @@
 }
 .icon-cross:before {
   content: "\ea0f";
+}
+.icon-arrow-right2:before {
+  content: "\ea3c";
 }

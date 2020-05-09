@@ -1,5 +1,3 @@
-@import '../mixins/breakpoints';
-
 .form_control {
   display: block;
   width: 100%;
@@ -16,23 +14,6 @@
 
 .h-line {
   border: 1px solid $clear;
-}
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-
-  @include pc() {
-    width: 90% !important;
-  }
-
-  @include pad() {
-    width: 87.5% !important;
-  }
-
-  @include mobile() {
-    width: 93.87% !important;
-  }
 }
 
 .d-flex {

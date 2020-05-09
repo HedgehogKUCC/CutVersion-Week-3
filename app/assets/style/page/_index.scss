@@ -1,5 +1,3 @@
-@import '../mixins/bg-cover';
-
 .banner {
   background-image: url('../images/index/banner_bg.png');
   @include bg-cover;
@@ -129,6 +127,7 @@
   }
 
   img {
+    margin: 0 auto;
     @include pad() {
       width: 80px;
     }
@@ -289,13 +288,11 @@
   }
 }
 
-// Joint Design
-.jd {
-  padding: 64px 0 479px;
-
-  @include pad() {
-    padding: 40px 48px 479px;
-  }
+.joint {
+  padding: 6.4rem 0 48rem;
+  /*  這裡路徑要看的是 dist/all.css */
+  background: url('../images/index/jointDesign/bg.png');
+  @include bg-cover;
 
   h3 {
     font-size: 4.8rem;
@@ -311,106 +308,128 @@
     }
   }
 
-  .photos {
-    max-width: 1539px; 
-    margin: 0 auto 60px auto;
+  &_top {
+    max-width: 1540px;
+    margin: 0 auto 6rem;
+    display: flex;
+    justify-content: space-between;
 
-    @include pad() {
-      max-width: 673px;
-      margin: 0 auto 40px auto;
+    .left {
+      width: 37.2%
+    }
+
+    .right {
+      width: 62.3%;
+
+      &_top {
+        margin-bottom: 0.8rem;
+      }
+
+      &_bottom {
+        display: flex;
+        justify-content: space-between;
+
+        &_left {
+          width: 13.765%;
+        }
+
+        &_right {
+          width: 85.435%;
+
+          &_top {
+            margin-bottom: 0.8rem;
+          }
+
+          &_bottom {
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+
+            .box {
+              width: 31.6%;
+              background: #f6c600;
+              padding-bottom: 20.375%;
+              transform: translateX(-32.8%);
+
+              &_btn {
+                position: absolute;
+                top: 50%;
+                left: 10.8%;
+                transform: translateY(-50%);
+                background: $clear;
+                padding-bottom: 35.4%;
+                width: 122%;
+                color: $primary;
+
+                @media screen and (max-width: 1440px) {
+                  background: transparent;
+                }
+
+                .more {
+                  font-size: 7.2rem;
+                  line-height: 9.5rem;
+                  position: absolute;
+                  top: 50%;
+                  left: 10.5%;
+                  transform: translateY(-50%);
+
+                  @media screen and (max-width: 1080px){
+                    font-size: 4rem;
+                    line-height: 5.3rem;
+                    left: 23.2%;
+                  }
+                }
+
+                .icon-arrow-right2 {
+                  position: absolute;
+                  top: 50%;
+                  right: 5.7%;
+                  transform: translateY(-50%);
+                  font-size: 4.8rem;
+
+                  @media screen and (max-width: 1440px) {
+                    display: none;
+                  }
+
+                  @media screen and (max-width: 1080px){
+                    display: block;
+                    color: $clear;
+                    font-size: 2.7rem;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
     }
   }
 
-  .more {
-    position: relative;
+  &_bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-    > img {
-      margin-left: 58.5%;
+    .box {
+      width: 48.75%;
+      position: relative;
 
-      @include pad() {
-        margin-left: 45%;
+      &_text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: $primary;
+        font-size: 7.2rem;
+        line-height: 9.5rem;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: rgba(255, 255, 255, 0.5);
       }
-    }
-
-    p {
-      position: absolute;
-      top: 50%;
-      right: 0;
-      font-size: 7.2rem;
-      line-height: 9.5rem;
-      color: $primary;
-      background: $clear;
-      transform: translate(0, -50%);
-      user-select: none;
-      cursor: pointer;
-      padding: 0 19px 0 32px;
-
-      @include pad() {
-        font-size: 4rem;
-        line-height: 3rem;
-        padding: 15px 10px 10px 19px;
-      }
-    }
-
-    img[src$="icon_arrow_forward.svg"] {
-      @include pad() {
-        width: 27px;
-      }
-    }
-  }
-
-  .double, .youth {
-    position: relative;
-
-    i {
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      background-color: rgba(255, 255, 255, 0.5);
-    }
-
-    p {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      color: $primary;
-      font-size: 6.3rem;
-      line-height: 9.5rem;
-
-      @include pad() {
-        font-size: 3.2rem;
-        line-height: 2.5rem;
-      }
-    }
-
-    img[src$=".png"] {
-      @include pad() {
-        width: 322px;
-      }
-    }
-  }
-
-  img[src$="picture_1.png"] {
-    height: 842px;
-
-    @include pad() {
-      height: 368.5px;
-    }
-  }
-
-  img[src$="picture_3.png"] {
-    @include pad() {
-      height: 166px;
-    }
-  }
-
-  img[src$="picture_5.png"] { 
-    @include pad() {
-      width: 147px;
-      height: 72px;
     }
   }
 }
