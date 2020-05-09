@@ -513,6 +513,10 @@
     padding: 4rem 0 5.6rem;
   }
 
+  @include mobile() {
+    padding: 2.4rem 0 4.8rem;
+  }
+
   .container {
     padding: 0 20.4rem;
 
@@ -522,6 +526,10 @@
 
     @include pad() {
       padding: 0 8.7rem;
+    }
+
+    @include mobile() {
+      padding: 0 3rem;
     }
 
     > p {
@@ -534,6 +542,10 @@
         font-size: 1.6rem;
         line-height: 2.4rem;
         margin-bottom: 1.6rem;
+      }
+
+      @include mobile() {
+        margin-bottom: 0.8rem;
       }
     }
   }
@@ -548,6 +560,12 @@
       font-size: 3.2rem;
       line-height: 4.5rem;
       margin-bottom: 1.6rem;
+    }
+
+    @include mobile() {
+      font-size: 2rem;
+      line-height: 2.8rem;
+      margin-bottom: 0.8rem;
     }
   }
 
@@ -568,6 +586,10 @@
     .form_control {
       height: 50px;
       color: $primary;
+
+      @include mobile() {
+        height: 36px;
+      }
     }
 
     input::placeholder, .input_textarea::placeholder {
@@ -597,6 +619,10 @@
       // https://www.w3schools.com/cssref/css3_pr_resize.asp
       resize: vertical;
       overflow: auto;
+
+      @include mobile() {
+        min-height: 10rem;
+      }
     }
   }
 
@@ -615,6 +641,10 @@
     @include pad() {
       font-size: 1.4rem;
       margin-bottom: 2.4rem;
+    }
+
+    @include mobile() {
+      margin-bottom: 2rem;
     }
 
     /* Hide the browser's default checkbox */
