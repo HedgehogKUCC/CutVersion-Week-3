@@ -48,7 +48,7 @@
 }
 
 .profession {
-  padding: 64px 0 80px;
+  padding: 6.4rem 0 8rem;
   color: $secondary;
   text-align: center;
   background: $pure;
@@ -58,7 +58,7 @@
   }
 
   @include mobile() {
-    padding: 32px 0 48px;
+    padding: 3.2rem 0 4.8rem;
   }
 
   h3 {
@@ -79,12 +79,12 @@
   h4 {
     font-size: 2.4rem;
     line-height: 3.3rem;
-    margin-top: 40px;
+    margin-top: 4rem;
 
     @include pad() {
       font-size: 2rem;
       line-height: 2.8rem;
-      margin-top: 16px;
+      margin-top: 1.6rem;
     }
   }
 
@@ -93,36 +93,36 @@
     text-align: left;
     font-size: 1.6rem;
     line-height: 2.4rem;
-    margin-top: 4px;
+    margin-top: 0.4rem;
 
     @include pad() {
-      margin-top: 8px;
+      margin-top: 0.8rem;
     }
   }
 
   ul {
     display: flex;
     justify-content: space-between;
-    margin-top: 44px;
+    margin-top: 4.4rem;
     flex-wrap: wrap;
 
     @include pad() {
-      margin-top: 12px;
+      margin-top: 1.2rem;
     }
   }
 
   li {
     width: 23.5%;
-    padding: 16px 37px 24px;
+    padding: 1.6rem 3.7rem 2.4rem;
 
     @include pad() {
       width: 48.22%;
-      padding: 20px 50px 8px;
+      padding: 2rem 5rem 0.8rem;
     }
 
     @include mobile() {
       width: 100%;
-      padding: 20px 64px 8px;
+      padding: 2rem 6.4rem 0.8rem;
     }
   }
 
