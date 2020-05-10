@@ -197,6 +197,10 @@
           @include pad() {
             margin: 0 5.21% 0 0;
           }
+
+          &:hover {
+            filter: none;
+          }
         }
 
         .list_title img {
