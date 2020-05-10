@@ -672,6 +672,10 @@
   .card {
     width: 23.5%;
 
+    &:hover {
+      box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15);
+    }
+
     @include pad() {
       width: 48.22%;
       margin-bottom: 2.4rem;
