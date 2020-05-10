@@ -449,7 +449,6 @@
                 background: $clear;
                 padding-bottom: 35.4%;
                 width: 122%;
-                color: $primary;
 
                 @media screen and (max-width: 1440px) {
                   background: transparent;
@@ -466,6 +465,39 @@
                   width: 116.5%;
                 }
 
+                &:hover {
+
+                  .icon-arrow-right2 {
+                    right: 3%;
+                  }
+
+                  .more:nth-child(2) {
+                    transform: translateY(-140px);
+                    opacity: .7;
+
+                    @include pc() {
+                      transform: translateY(-90px);
+                    }
+
+                    @include mobile() {
+                      transform: translateY(-50px);
+                    }
+                  }
+
+                  .more:nth-child(3) {
+                    transform: translateY(-200px);
+                    opacity: .5;
+
+                    @include pc() {
+                      transform: translateY(-150px);
+                    }
+
+                    @include mobile() {
+                      transform: translateY(-80px);
+                    }
+                  }
+                }
+
                 .more {
                   font-size: 7.2rem;
                   line-height: 9.5rem;
@@ -473,6 +505,8 @@
                   top: 50%;
                   left: 10.5%;
                   transform: translateY(-50%);
+                  color: $primary;
+                  transition: transform .8s;
 
                   @include pc() {
                     font-size: 4rem;
@@ -496,6 +530,8 @@
                   right: 5.7%;
                   transform: translateY(-50%);
                   font-size: 4.8rem;
+                  color: #000;
+                  transition: right .8s;
 
                   @media screen and (max-width: 1440px) {
                     display: none;
@@ -513,7 +549,7 @@
 
                   @include pad() {
                     display: block;
-                    color: $primary;
+                    color: #000;
                   }
 
                   @include mobile() {
