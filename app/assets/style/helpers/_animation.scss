@@ -1,0 +1,50 @@
+.fadeInDown {
+  animation-name: fadeInDown;
+  animation-fill-mode: both;
+}
+
+.am-order-1 {
+  animation-delay: .5s;
+  animation-duration: 1s;
+}
+
+.am-order-2 {
+  animation-delay: 1s;
+  animation-duration: 1s;
+}
+
+.am-order-3 {
+  animation-delay: 1.5s;
+  animation-duration: 1s;
+}
+
+.am-order-4 {
+  animation-delay: 2s;
+  animation-duration: 1s;
+}
+
+.am-order-5 {
+  animation-delay: 2.5s;
+  animation-duration: 1s;
+}
+
+.am-order-6 {
+  animation-delay: 3s;
+  animation-duration: 1s;
+}
+
+.am-order-7 {
+  animation-delay: 3.5s;
+  animation-duration: 1s;
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translate3d(0,-100%,0);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(0,0,0);
+  }
+}
