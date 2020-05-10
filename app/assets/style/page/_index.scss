@@ -515,6 +515,10 @@
                   @include mobile() {
                     font-size: 1.8rem;
                   }
+
+                  @media screen and (max-width: 374px) {
+                    display: none;
+                  }
                 }
               }
             }
