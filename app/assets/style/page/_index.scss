@@ -588,26 +588,10 @@
   }
 }
 
-// Customer Recommendation
-.cr {
+.customer {
   height: 306px;
   position: relative;
   
-  @include pad() {
-    height: 632px;
-  }
-
-  .cr_inner {
-    position: absolute;
-    top: -115%;
-    left: 50%;
-    transform: translate(-50%);
-
-    @include pad() {
-      top: -70%
-    }
-  }
-
   h3 {
     font-size: 4.8rem;
     line-height: 6.7rem;
@@ -619,56 +603,6 @@
       font-size: 3.2rem;
       line-height: 4.5rem;
       margin-bottom: 32px;
-    }
-  }
-
-  ul {
-    display: flex;
-
-    @include pad() {
-      width: 672px;
-      justify-content: space-between;
-      flex-wrap: wrap;
-    }
-  }
-
-  li {
-
-    &:hover {
-      box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
-    }
-
-    @include pad() {
-      width: 48.2%;
-    }
-
-    img {
-      display: block;
-
-      @include pad() {
-        width: 324px;
-      }
-    }
-
-    .li_inner {
-      padding: 16px;
-      border: 1px solid #DEE2E6;
-      background: $clear;
-    }
-
-    h5, span {
-      font-size: 1.6rem;
-      line-height: 2.1rem;
-    }
-
-    p {
-      font-size: 1.6rem;
-      line-height: 2.4rem;
-      margin: 16px 0;
-    }
-
-    span {
-      color: #707070;
     }
   }
 }
