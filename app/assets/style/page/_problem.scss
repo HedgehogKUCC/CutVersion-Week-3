@@ -67,7 +67,6 @@
         line-height: 2.8rem;
         padding: 2.2rem 0 2.2rem 3.8rem;
         border-top: 1px solid #000;
-        border-bottom: 1px solid #000;
         position: relative;
 
         &::before {
@@ -77,7 +76,8 @@
           right: 55px;
           width: 15px;
           border: 1px solid #000;
-          transform: rotate(30deg) translateY(-50%);
+          transform: rotate(150deg) translateY(-50%);
+          transition: transform 1s;
         }
 
         &::after {
@@ -87,15 +87,38 @@
           right: 42px;
           width: 15px;
           border: 1px solid #000;
-          transform: rotate(-30deg) translateY(-50%);
+          transform: rotate(-150deg) translateY(-50%);
+          transition: transform 1s;
         }
       }
 
       p {
         font-size: 1.6rem;
         line-height: 2.4rem;
-        padding: 2.2rem 0 2.2rem 3.8rem;
         background-color: #F2F2F2;
+        height: 0;
+        overflow: hidden;
+        transition: all 1.5s;
+      }
+    }
+
+    li.active {
+      h4 {
+        border-bottom: 1px solid #000;
+
+        &::before {
+          transform: rotate(30deg);
+        }
+
+        &::after {
+          transform: rotate(-30deg);
+        }
+      }
+
+      p {
+        padding: 2.2rem 0 2.2rem 3.8rem;
+        height: 116px;
+        overflow: visible;
       }
     }
   }
