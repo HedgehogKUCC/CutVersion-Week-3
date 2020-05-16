@@ -68,6 +68,27 @@
         padding: 2.2rem 0 2.2rem 3.8rem;
         border-top: 1px solid #000;
         border-bottom: 1px solid #000;
+        position: relative;
+
+        &::before {
+          content: '';
+          position: absolute;
+          top: 50%;
+          right: 55px;
+          width: 15px;
+          border: 1px solid #000;
+          transform: rotate(30deg) translateY(-50%);
+        }
+
+        &::after {
+          content: '';
+          position: absolute;
+          top: 50%;
+          right: 42px;
+          width: 15px;
+          border: 1px solid #000;
+          transform: rotate(-30deg) translateY(-50%);
+        }
       }
 
       p {
