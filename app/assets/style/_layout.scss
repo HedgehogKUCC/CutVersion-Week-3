@@ -28,7 +28,6 @@
   }
 
   h1 {
-    cursor: pointer;
     @include hide-text;
 
     @include mobile() {
