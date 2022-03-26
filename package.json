@@ -34,7 +34,7 @@
     "gulp-postcss": "8.0.0",
     "gulp-sass": "4.0.2",
     "gulp-sourcemaps": "2.6.5",
-    "minimist": "1.2.0",
+    "minimist": "1.2.6",
     "morgan": "1.9.1",
     "node-sass": "4.12.0"
   }
